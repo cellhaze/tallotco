@@ -1,0 +1,34 @@
+<div id="login">
+    <div class="loginCol1">
+        <div class="loginP1">
+            <h2>Do you like Books?</h2>
+            <p>
+                If not, surely you know someone who does. Our goal in creating Book Buddies was to provide an easier way to trade books. We’ve created an app that allows you to add books to your own personal library and store them to be traded with other users on our site.
+            </p> 
+        </div>
+        <div class="loginP2">
+            <h2>Trade your books with other Bibliophiles</h2>
+            <p>
+                Our app uses the Google Books API, so just about any book you can imagine is available. From textbooks to comic books, if Google can find it, you can trade it. Our app proposes the trade and sends notifications to the traders through email. This means you’re allowed to trade on your own terms. So sign up, build your library, and get trading!
+            </p>  
+        </div>    
+    </div>
+    <div class="loginCol2">
+      <form class="loginForm" name="loginForm" ng-submit="logIn(logInUser)">
+          <h2>Login</h2>
+          <label><input type="text" name="username" value="Username" placeholder="Username" ng-model="logInUser.username"></label>
+          <br>
+          <label><input type="password" name="password" value="Password" placeholder="Password" ng-model="logInUser.password"></label>
+          <br>
+          <button type="submit" class="loginButton">Log in</button>
+          <p ng-if="loginError" class="errorText">Incorrect username and/or password</p>
+      </form>
+        <p>
+            Contact our <a>Dev Team</a><br>
+            for password help.
+        </p>
+      <br>
+      <button class="signupButton" type="button" ng-click="signupToggle('lg')">Sign Up</button>
+
+    </div>
+</div>

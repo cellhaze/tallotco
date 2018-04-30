@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <!--Bootstrap Style Sheets-->
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet"href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">
+    <!--Style Sheets-->
+    <link href="styles.css" type="text/css" rel="stylesheet">
+    <link href="mobile.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amiri" rel="stylesheet">
+    <!--External JS Links-->
+    <script src="libs/angular.min.js"></script>
+    <script src="libs/angular-route.min.js"></script>
+    <script src="libs/angular-animate.min.js"></script>
+    <script src="libs/bootstrap-3.3.7-dist/ui-bootstrap-tpls-2.5.0.min.js" charset="utf-8"></script>
+    <!--Script files-->
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="BookBuddiesMod" ng-controller="searchController">
+<!--==============header=====================-->
+    <div class="header">
+      <div class="layer">
+        <div class="siteTitle">
+          TallotCo
+        </div>
+        <div id="headerLinks">
+            <a href="">GAMES</a>
+            <a href="">COMMUNITY</a>
+            <a href="">CAREERS</a>
+            <a href="">SUPPORT</a>
+            
+            <div class="rightSide">
+                <div class="right-inner-addon searchDiv">
+                  Search
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <ng-view></ng-view>
+<!--    HOMEPAGE -->
+    <div id="hero">
+        <h1>09/20/19 New Release</h1>
+        <h1>YIN and Yang</h1>
+    </div>
+    <div>
+        <div class="main">
+            <div>Title</div>
+            <p>Post1</p>
+            <p>Post2</p>
+        </div>
+    </div>
+      
+  </body>
+</html>
